@@ -11,6 +11,9 @@ let g:indent_guides_auto_colors = 0
 hi IndentGuidesOdd  ctermbg=darkgrey
 hi IndentGuidesEven ctermbg=grey
 
+set laststatus=2        " enable airline
+set ttimeoutlen=50       " airline exit insert mode faster
+
 set foldenable          " enable folding
 set foldlevelstart=99   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
