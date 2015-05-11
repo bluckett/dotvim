@@ -1,6 +1,13 @@
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'vim-airline')
 execute pathogen#infect()
 
 filetype plugin indent on
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+set noshowmode
 
 syntax enable                " enable syntax processing
 set background=dark
